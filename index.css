@@ -86,7 +86,7 @@ main form  > button {
 
 main form textarea {
     width: 100%;
-    height: 7.1em;
+    height: 6.1em;
     font-size: inherit;
     line-height: 1.5;
     resize: none;
@@ -102,9 +102,13 @@ main form fieldset {
     flex-direction: column;
     border: 0 none;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
     padding-left: 10px;
-    gap: 13px;
+
+    color: #333333;
+    font-weight: 700;
+    gap: 3px;
 
     /* fixes a problem with safari */
     animation-name: safari-fieldset-fix;
@@ -121,6 +125,7 @@ main form fieldset legend {
 main form fieldset label img {
     margin-left: 5px;
     margin-bottom: -3px;
+    border: 1px solid #999999;
 }
 
 @keyframes safari-fieldset-fix {
