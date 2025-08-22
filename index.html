@@ -20,17 +20,18 @@
 
          <main>
             <form>
-                <label for="text-to-translate">Text to translate 👇</label>
-                <textarea name="text-to-translate" id="text-to-translate" placeholder="How are you?"></textarea>
+                <label for="text">Text to translate 👇</label>
+                <textarea name="text" id="text" placeholder="How are you?"></textarea>
 
-                <fieldset>
+                <fieldset id="language-selector">
                         <legend>Select a language 👇</legend>
                         <label for="french"><input type="radio" name="language" id="french" value="french"> French <img src="./assets/fr-flag.png"></label>
                         <label for="spanish"><input type="radio" name="language" id="spanish" value="spanish"> Spanish <img src="./assets/sp-flag.png"></label>
                         <label for="japanese"><input type="radio" name="language" id="japanese" value="japanese"> Japanese <img src="./assets/jpn-flag.png"></label>
-                        
                 </fieldset>
 
+                <label for="text" class="translation-output">Your translation 👇</label>
+                <textarea name="text" class="translation-output" id="text" placeholder="How are you?">Wie geht es Ihnen?</textarea>
                 <button type="submit">Translate</button>
             </form>
          </main>

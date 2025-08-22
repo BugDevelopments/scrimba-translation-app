@@ -5,6 +5,7 @@
 
 body {
     min-width: 390px;
+    max-width: 800px;
     margin: auto auto;
     font-family: "Poppins", sans-serif;
     border: 1px solid black;
@@ -119,6 +120,12 @@ main form fieldset {
     animation-iteration-count: 1;     
 }
 
+label {
+  display: inline-flex;
+  align-items: center;   /* vertical centering */
+  gap: 0.25em;            /* space between children (radio, text, img) */
+}
+
 main form fieldset legend {
     text-align: center;
     margin-top: 25px;
@@ -134,4 +141,8 @@ main form fieldset label img {
 @keyframes safari-fieldset-fix {
   from { opacity: 1; }
   to { opacity: 1; }
+}
+
+.translation-output {
+    display: none;
 }
